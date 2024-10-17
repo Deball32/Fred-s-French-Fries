@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>  
+<button class="Home-button">Home Button</button>
+
+<button class="About-button">About Button</button>
+
+<button class="Service-button">Service Button</button>
+
+<button class="Back-button">Back Button</button>
+
+<style>
+  .Home-button{
+ background-color: black;rgba(2, 2, 12, 1);
+  color: white;rgba(250, 251, 255, 1);
+  border: none;
+  height: 36px;
+  width: 81px;
+  border-radius: 9px;
+  margin-right: 8px;
+  }
+  .Home-button:hover{
+    opacity: 0.8px;
+  }
+  .Home-button:active{
+    opacity: 0.5px;
+  }
+  .About-button{
+     background-color: black;rgba(2, 2, 12, 1);
+    color: white;rgba(252, 254, 255, 1);
+    border: none;
+    height: 36px;
+    width: 81px;
+    border-radius; 9px;
+    margin-right: 8px;
+  }
+    .About-button:hover{
+      opacity: 0.8px;
+    }
+    .About-button:active{
+      opacity: 0.5px;
+    }
+      .Service-button{
+     background-color: black;rgba(2, 2, 12, 1);
+     color: white;rgba(252, 254, 255, 1);
+      border: none;
+      height: 36px;
+      width: 81px;
+      border-radius: 9px;
+      margin-right: 8px;
+      }
+      .Service-button:hover;{
+        opacity: 0.8px;
+      }
+      .Service-button:active;{
+        opacity: 0.5px;
+      }
+      .Back-button{
+        background-color: black;rgba(2, 2, 12, 1);
+       color: white;rgba(238, 238, 238, 1);
+       border: none;
+       height: 36px;
+       width: 72px;
+       border-radius: 9px
+      }
+</style>
+  <h1>Fred's French Fries</h1>
+  <p>Fred's French Fries are one of the the most delicious tasting fries ever gotten from the freshest potatoes grown by Fred
+  from his irish potato fries to his sweet potatoe fries</p>
+  <p>Menu:</p>
+  <li>French Fry Combo for $3.2</li>
+  <li>Complementary Diping Sauces(Sweet and spicy or sweet and sour)</li>
+  <li>Fred's French Fry Deluxe for $4.12</li>
+  <li>Fred's French Fry Special for $4.13</li>
+  <p>How he started:</p>
+  <p>When Fred was a kid he and his parents loved to go to a particular diner to eat but Fred always ordered french fries so as he grew older he had an idea to open a restaurant so everyone could enjoy it</p>
+  <a href="privacy-policy">Privacy Policy</a>
+  <a href="Terms and Conditions">Terms and conditions</a>
+  <a href="Cookie Settings">Cookie Settings</a>
+ <p>To try some of his french fries just tap the order button below</p>
+
+  <div>
+    <span>French Fries</span>
+    <button onclick="addToCart('French Fries')">Order Now</button>
+  </div>
+
+  <h2>Your Cart</h2>
+  <ul id="cart"></ul>
+
+  <script>
+    const cart = [];
+
+    function addToCart(item) {
+      cart.push(item);
+      updateCart();
+    }
+
+    function updateCart() {
+      const cartList = document.getElementById('cart');
+      cartList.innerHTML = '';  // Clear previous cart contents
+
+      cart.forEach((item, index) => {
+        const li = document.createElement('li');
+        li.textContent = `${item} (Item ${index + 1})`;
+        cartList.appendChild(li);
+      });
+    }
+  </script>
+
+</body>
+</html>
+
+<body>
+</html>
+ <style>
+   .Order-Button{
+     background-color: green;rgba(88, 180, 56, 1)
+     color: white;
+     border: none;
+     height: 36px;
+     width: 76px;
+     border-radius: 5px;
+   }
+   
+ </style>
+  </body>
+
+<body>
+  <a href="index.html">
+    <button>Go Back to Home</button>
+  </a>
+
+</body>
+</html>
